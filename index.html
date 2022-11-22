@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title></title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="forma">
+                <h2 class="forma__title">Pizza order</h2>
+                <form id="form">
+                    <div class="form__header">
+                        <input class="userName" type="text" name="userName" placeholder="User name" required>
+                        <input class="usertel" type="tel" name="usertel"  placeholder="User number" required>
+                        <input class="userAddress" type="text" name="userAddress" placeholder="User address" required>
+                    </div>
+                    <label>
+                        Dough thickness
+                        
+                       <select name="userSelect" id="select" required>
+                        <option value="">Pitsa turini tanlang..</option>
+                        <option value="Thin">Thin</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Thick">Thick</option>
+                       </select>
+                    </label>
+                    <div class="forma__size">
+                        <h3>
+                            Size :
+                        </h3>
+                        <input id="size1" type="radio" name="size" class="size1">
+                        <label for="size1">25 sm</label>
+                        <input id="size2" type="radio" name="size" class="size2">
+                        <label for="size2">30 sm</label>
+                        <input id="size3" type="radio" name="size" class="size3">
+                        <label for="size3">35 sm</label>
+                    
+                    </div>
+                    <h3 class="forma__pizaa__title">On Pizza :</h3>
+                    <div class="forma__pizaa">
+
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa1">
+                            Tomato
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa2">
+                            Pickled cucumber
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa3">
+                            Turkey meat
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa4">
+                            Mushroom
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa5">
+                            Olive
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="pizaa6">
+                            Horse meat
+                        </label>
+                    </div>
+                    
+                    <h3 class="forma__pizaa__title">Add :</h3>
+                    <div class="forma__pizaa">
+                        <label>
+                            <input type="checkbox" name="checkbox" id="add__Pepper">
+                            Pepper
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" id="add__Sausage">
+                            Sausage
+                        </label>
+                    </div>
+                    <button type="submit" class="Save__btn">Save</button>
+                </form>
+            </div>
+            <ul id="order">
+    
+            </ul>
+            <div class="chek">
+             
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
